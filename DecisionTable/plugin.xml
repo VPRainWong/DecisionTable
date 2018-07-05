@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.decisiontable"
+		name="Decision Table"
+		description="Create Decision Table"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.decisiontable.DecisionTablePlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.decisiontable.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.decisiontable.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.decisiontable.actionset1.DecisionTableAction"
+					actionType="generalAction"
+      		name="Decision Table"
+		      description="Create Decision Table"
+					style="normal"
+          icon="icon/icon.png"
+          tooltip="Create Decision Table"
+					toolbarPath="com.vp.plugin.sample.decisiontable.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.decisiontable.actions.DecisionTableActionControl"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
